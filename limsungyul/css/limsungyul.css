@@ -12,6 +12,7 @@ button {
   background-color: transparent;
   border-radius: 10px;
   border: 1px solid;
+  padding: 5px 15px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -31,8 +32,6 @@ header {
 }
 
 header.onScroll {
-  height: 3.5rem;
-  opacity: 0.7;
   filter: drop-shadow(0 5px 10px rgba(0,0,0,0.6));
 }
 
@@ -63,7 +62,6 @@ header .nav .logo span {
 header .nav .menu {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
   top: 100%;
   left: 0;
   width: 100%;
@@ -106,18 +104,6 @@ header .nav .menu li {
   font-size: 2rem;
   font-weight: 600;
  
-}
-
-header .nav .menu li.onToggle {
-
-}
-
-header .nav .menu.toggle {
-  
-}
-
-header .nav .menu.toggle li {
-  
 }
 
 header .nav .toggleBtn {
@@ -185,16 +171,17 @@ header .nav .toggleBtn > .toggle3.onToggle{
 
 main {
   margin-top: 4rem;
+  background: linear-gradient(to bottom, white 20%, orange);
 }
 
-main > h1 {
+main h1 {
   font-weight: 600;
 }
 
 main .slide-container {
   width: 100%;
-  
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -222,7 +209,12 @@ main .slide-container .slides li {
   justify-content: center;
   transition: transform 0.3s linear;
 }
-
+main .slide-container .slides li h1{
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
 main .slide-container .slides li.loading {
   background: linear-gradient(to right, skyblue 40%, #b1e9ff 45%, skyblue 55%);
   background-size: 200% 200%;
@@ -253,10 +245,44 @@ main .slide-container .slides .buttons {
 
 
 main .hangman-container {
-  background-color: black;
   width: 100%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  /* padding: 0 2rem; */
 }
+
+main .hangman-container .hangman-canvas {
+  width: 400px; 
+  height: 400px;
+  border-radius: 5px;
+
+}
+
+main .hangman-container .answer {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main .hangman-container .wordBtns {
+  height: 200px;
+
+}
+
+main .hangman-container .hint {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: fit-content;
+  padding: 25px 30px;
+  margin-bottom: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
 
 @media (min-width: 760px) {
    

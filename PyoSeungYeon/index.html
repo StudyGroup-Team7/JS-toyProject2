@@ -63,7 +63,7 @@
     </section>
 
     <section class="section services" role="tabpanel" id="section-services">
-      our services
+      services
     </section>
 
     <section class="section images" role="tabpanel" id="section-images">
@@ -94,9 +94,13 @@
     </section>
 
     <footer class="footer">
-      <p>
-        Copyright © Backroads Travel Tours Company 2023. All Rights Reserved
-      </p>
+      <h1>Hangman Game:</h1>
+      <div id="word"></div>
+      <p>알파벳을 입력하세요➡️</p>
+      <input type="text" id="guess" />
+      <button onclick="guessLetter()">Submit</button>
+      <p>잘못된 답:</p>
+      <ul id="wrong-guesses"></ul>
     </footer>
   </body>
 </html>

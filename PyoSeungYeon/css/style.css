@@ -114,9 +114,6 @@ body {
   transition: transform 300ms ease-in-out;
 }
 
-.section.images .carousel .slider-list .slider-item {
-}
-
 .section.images .carousel .slider-list .slider-item img {
   display: block;
   width: 700px;
@@ -137,12 +134,25 @@ body {
   margin-right: 12px;
 }
 
-.section.images .btn.btn-next {
-}
-
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 184px;
+  height: 400px;
+}
+
+.footer h1 {
+  margin-right: 20px;
+}
+
+.footer p:first-of-type {
+  margin-left: 20px;
+  color: hotpink;
+}
+
+.footer button {
+  margin-right: 20px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: hotpink;
 }

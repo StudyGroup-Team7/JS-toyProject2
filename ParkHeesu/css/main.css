@@ -1,0 +1,247 @@
+/* COMMEN */
+
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 8px;
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.inner{
+  width: 160rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hide{
+  display: none;
+}
+
+
+/* HEADER */
+
+.wrap{
+  width: 100%;
+}
+
+header{
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #c8c8c8;
+  position: sticky;
+  top:0;
+  z-index: 10;
+}
+
+header .container{
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+
+}
+
+header h1{
+  height: 12rem;
+  display: flex;
+  align-items: center;
+}
+
+header h1 img{
+  width: 18rem;
+}
+
+header .nav{
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: flex;
+}
+
+header .nav li{
+  width: 18rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* SLIDE SECTION */
+
+.section-slide .slider-container{
+  width: 160rem;
+  height: 86rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide{
+  transition: all 0.4s ease-in;
+}
+
+.section-slide .slider-btn{
+  width: 160rem;
+  font-size: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev, .next{
+  height: 12rem;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.next{
+  right: 0;
+}
+
+/* HANGMAN SECTION */
+
+.section-hangman{
+  margin: 5rem 0;
+}
+
+.hangman-container{
+  font-size: 1.8rem;
+  color: #fff;
+  background-image: linear-gradient(to bottom,#92e4ff,#8cef76);
+  width: 100%;
+  height: 100rem;
+  text-align: center;
+}
+
+/* 행맨게임 설명부분 */
+.hangman-container .discription{
+  font-weight: 700;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hangman-container h1{
+  padding-top: 3rem;
+  font-size: 4.8rem;
+}
+
+.hangman-container p{
+  margin-top: 1.2rem;
+  margin-bottom: 3.2rem;
+  font-size: 2.4rem;
+}
+
+.hangman-wrap{
+  width: 100rem;
+  height: 72rem;
+  margin: 0 auto;
+}
+/* 행맨게임 카드부분 */
+
+.hangman-container .alphabet-card ul{
+  color: #92e4ff;
+  font-size: 3.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+.hangman-container .alphabet-card ul li{
+  font-weight: 600;
+  width: 6.5rem;
+  height: 7rem;
+  line-height: 6rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: 2px solid #92e4ff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: .2s ease-out;
+}
+
+.hangman-container .alphabet-card ul li:hover{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
+.active{
+  /* \!important는 정말 필요한 경우를 제외하곤 지양할 것 */
+  background-color: #92e4ff !important; 
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: default;
+  opacity: 0.4;
+}
+
+/* 행맨게임 단어부분 */
+.holding{
+  height: 10rem;
+  padding-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.my-word{
+  font-size: 4.8rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.hoding .my-word .guess{
+  font-weight: 700;
+  text-align: center;
+}
+
+.hangman-container p.show-clear{
+  height: 8rem;
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.life{
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #ff166f;
+}
+
+.clue{
+  height: 2rem;
+  padding-bottom: 5rem;
+}
+
+/* 버튼 */
+.btn{
+  font-weight: 700;
+  color: #92e4ff;
+  font-size: 4.8rem;
+  background-color: #fff;
+  border: 1px solid #92e4ff;
+  width: 40rem;
+  height: 10rem;
+  border-radius: 8px;
+  cursor: pointer;
+} 
+
+.hint{
+  margin-right: 10rem;
+}
+

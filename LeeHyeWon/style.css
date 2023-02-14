@@ -1,0 +1,117 @@
+* {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  box-sizing: border-box;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  height: 250vh;
+  scroll-behavior: smooth;
+}
+header {
+  height: 100vh;
+  background-image: url("https://www.warnermusic.co.kr/wp-content/uploads/2017/07/Coldplay_higherpower_profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.inner_head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 114px;
+  padding: 30px 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.inner_head.show {
+  background-color: rgba(185, 185, 188, 0.8);
+  position: fixed;
+  z-index: 1;
+}
+.nav-wrap.show {
+  color: #000;
+}
+.links-container {
+  display: flex;
+}
+li {
+  margin-left: 20px;
+  list-style-type: none;
+  word-break: keep-all;
+}
+a.show {
+  color: black;
+}
+section.profile {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-item--left {
+  margin: 40px;
+  width: 50vw;
+}
+.profile h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.profile p {
+  word-break: keep-all;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.profile-item--right {
+  color: #000;
+}
+.profile-item--right h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.profile-item--right h4 {
+  margin: 10px 0 20px 0;
+}
+.img-slide {
+  display: inline-flex;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+.img-slide img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s ease;
+}
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 10vh;
+}
+footer div {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

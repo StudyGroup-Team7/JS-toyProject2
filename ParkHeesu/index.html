@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECT</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="/ParkHeesu/css/main.css">
+  <script type="module" defer src="../ParkHeesu/js/hangman.js"></script>
+  <script type="module" defer src="/ParkHeesu/js/main.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="container">
+        <h1>
+          <a href="">
+            <img src="/Parkheesu/image/ZOOMER__1_-removebg-preview.png" alt="logo">
+          </a>
+        </h1>
+        <ul class="nav">
+          <li id="slide">SLIDE</li>
+          <li id="hangman">HANGMAN</li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <section id="slider" class="section-slide">
+        <div class="inner">
+          <div class="slider-container">
+            <div class="slide">
+              <img src="/ParkHeesu/image/1078184.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="/ParkHeesu/image/1078199.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="/ParkHeesu/image/1078215.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="/ParkHeesu/image/1078285.jpg" alt="">
+            </div>
+          </div>
+          <div class="slider-btn">
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+          </div>
+        </div>
+      </section>
+      <section class="section-hangman">
+          <div class="hangman-container">
+            <div class="discription">
+              <h1>HANGMAN</h1>
+              <h2>Vanilla JavaScript Hangman</h2>
+              <p>알파벳 카드와 힌트를 이용하여, 해당 카테고리에 맞는 단어를 맞추세요!</p>
+            </div>
+            <div class="hangman-wrap inner">
+              <div class="alphabet-card">
+                <ul class="cards">
+                </ul>
+              </div>
+              <p class="category"></p>
+              <div class="holding">
+                <ul class="my-word">
+                </ul>
+              </div>
+              <p class="show-clear"></p>
+              <p class="life">LIFE: 10</p>
+              <p class="clue"></p>
+              <div class="play-btn">
+                <button class="hint btn">Hint</button>
+                <button class="play btn">Play again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer></footer>
+  </div>
+</body>
+</html>
